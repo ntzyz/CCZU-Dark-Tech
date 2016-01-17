@@ -8,4 +8,4 @@
 所以呢，把这些东西直接整合到一个简单的程序里面，把那些个可以直接访问的URL放到控件后面去，就完美的解决了这个问题惹～
 
 ## 下载
-直接在 [releases](https://github.com/echonest/pyechonest/releases) 页面下载可执行文件。 
+直接在 [releases](https://github.com/Zhangyuze/CCZU-Dark-Tech/releases) 页面下载可执行文件。 
