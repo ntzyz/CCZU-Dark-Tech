@@ -1,0 +1,9 @@
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\bin\Release\getClasseScore.exe.config
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\bin\Release\getClasseScore.exe
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\bin\Release\getClasseScore.pdb
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.Form1.resources
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.Properties.Resources.resources
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.WebView.resources
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.csproj.GenerateResource.Cache
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.exe
+C:\Users\root\documents\visual studio 2015\Projects\getClasseScore\getClasseScore\obj\Release\getClasseScore.pdb
