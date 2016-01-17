@@ -1,0 +1,8 @@
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.exe.config
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.exe
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.pdb
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.csprojResolveAssemblyReference.cache
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU_Dark_Tech.Properties.Resources.resources
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.csproj.GenerateResource.Cache
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.exe
+c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.pdb

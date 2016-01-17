@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getClasseScore", "getClasseScore\getClasseScore.csproj", "{42748D4B-C436-40FB-A948-CC4C148F4F57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCZU-Dark-Tech", "CCZU-Dark-Tech\CCZU-Dark-Tech.csproj", "{3A2FF673-5998-44C9-BA0C-6EF9F667B6BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{42748D4B-C436-40FB-A948-CC4C148F4F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{42748D4B-C436-40FB-A948-CC4C148F4F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{42748D4B-C436-40FB-A948-CC4C148F4F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{42748D4B-C436-40FB-A948-CC4C148F4F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2FF673-5998-44C9-BA0C-6EF9F667B6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2FF673-5998-44C9-BA0C-6EF9F667B6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2FF673-5998-44C9-BA0C-6EF9F667B6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2FF673-5998-44C9-BA0C-6EF9F667B6BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
