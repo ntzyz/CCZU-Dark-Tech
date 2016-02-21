@@ -18,6 +18,7 @@ namespace CCZU_Dark_Tech
             tbxCourse.Text = "40201053";
             */
             Control.CheckForIllegalCrossThreadCalls = false;
+            queryType.SelectedIndex = 0;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
@@ -42,16 +43,26 @@ namespace CCZU_Dark_Tech
             progressBar1.Visible = true;
             for (int i = start; i <= end; i++)
             {
-                string url = string.Format("http://219.230.159.132/web_cjgl/cx_cj_xh_gly.aspx?whfs=%E5%AD%A6%E7%94%9F%E5%88%97%E8%A1%A8%E6%88%90%E7%BB%A9&xsxh={0}{1:d2}&xsbh=&kcdm", tbxClasse.Text, i);
+                string url;
+                if (queryType.SelectedIndex == 0)
+                    url = string.Format("http://219.230.159.132/web_cjgl/cx_cj_xh_gly.aspx?whfs=%E5%AD%A6%E7%94%9F%E5%88%97%E8%A1%A8%E6%88%90%E7%BB%A9&xsxh={0}{1:d2}&xsbh=&kcdm", tbxClasse.Text, i);
+                else
+                    url = string.Format("http://219.230.159.132/web_ksgl/ksgl_ksapcx_sj.aspx?lb=%E4%B8%8D%E5%8F%8A%E6%A0%BC%E8%AF%BE%E7%A8%8B%E8%A1%A5%E8%80%83&xq=15-16-2&whfs=%E6%9F%A5%E8%AF%A2%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE%E8%AF%BE%E7%A8%8B%E8%80%83%E8%AF%95%E5%AE%89%E6%8E%92&kssj=&bh={0}{1:d2}&ksz=0", tbxClasse.Text, i);
+                
                 string content = getPage(url);
                 string[] lines = content.Split('\n');
                 for (int index = 0; index < lines.Length; index++)
                 {
-                    if (lines[index].Contains(courseID.Trim()))
+                    if (queryType.SelectedIndex == 0 && lines[index].Contains(courseID.Trim()))
                     {
                         tableContent += lines[index];
-                        tableContent += "</tr><tr class=\"dg1 - item\">";
+                        tableContent += "</tr><tr class=\"dg1-item\">";
                         break;
+                    }
+                    else if (lines[index].Contains("dg1-item"))
+                    {
+                        tableContent += "<td style=\"width:8%;\">" + string.Format("{0}{1:d2}", tbxClasse.Text, i) + "</td>" + lines[index + 1].Substring(0, lines[index + 1].Length - "<td style=\"width:8%;\">&nbsp;</td>".Length - 1);
+                        tableContent += "</tr><tr class=\"dg1-item\">";
                     }
                 }
                 progressBar1.PerformStep();
@@ -89,7 +100,7 @@ namespace CCZU_Dark_Tech
             wv.Size = new System.Drawing.Size(350, 560);
             wv.ShowDialog();
             */
-            MessageBox.Show("抱歉，暂不提供该功能。\r\n这是保护隐私的最后一道防线了……", "滑稽");
+            MessageBox.Show("抱歉，暂不提供该功能。\r\n这是保护隐私的最后一道防线了……\r\n实在想看的，看源码吧……", "滑稽");
         }
 
         private void btnSingleScore_Click(object sender, EventArgs e)
@@ -121,6 +132,18 @@ namespace CCZU_Dark_Tech
         private void llblSrc_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Zhangyuze/CCZU-Dark-Tech");
+        }
+
+        private void queryType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (queryType.SelectedIndex == 0)
+            {
+                tbxCourse.Enabled = true;
+            }
+            else
+            {
+                tbxCourse.Enabled = false;
+            }
         }
     }
 }

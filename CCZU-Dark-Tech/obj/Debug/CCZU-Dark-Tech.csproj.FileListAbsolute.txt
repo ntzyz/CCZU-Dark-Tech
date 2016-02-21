@@ -6,3 +6,12 @@ c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tec
 c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.csproj.GenerateResource.Cache
 c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.exe
 c:\users\root\documents\visual studio 2015\Projects\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.pdb
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.exe.config
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.exe
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.pdb
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.exe
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\bin\Debug\CCZU-Dark-Tech.pdb
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.csprojResolveAssemblyReference.cache
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU_Dark_Tech.Form1.resources
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU_Dark_Tech.Properties.Resources.resources
+C:\cygwin\home\root\CCZU-Dark-Tech\CCZU-Dark-Tech\obj\Debug\CCZU-Dark-Tech.csproj.GenerateResource.Cache

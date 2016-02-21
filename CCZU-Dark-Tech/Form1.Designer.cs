@@ -43,6 +43,7 @@
             this.lblStudentID = new System.Windows.Forms.Label();
             this.tbxStudentID = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.queryType = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnGetPageByName = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -95,7 +96,7 @@
             // lblCourse
             // 
             this.lblCourse.AutoSize = true;
-            this.lblCourse.Location = new System.Drawing.Point(6, 59);
+            this.lblCourse.Location = new System.Drawing.Point(6, 62);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(53, 12);
             this.lblCourse.TabIndex = 5;
@@ -104,9 +105,9 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnStart.Location = new System.Drawing.Point(137, 85);
+            this.btnStart.Location = new System.Drawing.Point(138, 86);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(63, 21);
+            this.btnStart.Size = new System.Drawing.Size(62, 23);
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "狗带";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -114,10 +115,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(8, 85);
+            this.progressBar1.Location = new System.Drawing.Point(8, 114);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(123, 21);
+            this.progressBar1.Size = new System.Drawing.Size(192, 20);
             this.progressBar1.TabIndex = 7;
             // 
             // tabControl1
@@ -129,7 +130,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(217, 142);
+            this.tabControl1.Size = new System.Drawing.Size(217, 169);
             this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -142,14 +143,14 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(209, 116);
+            this.tabPage1.Size = new System.Drawing.Size(209, 143);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "个人查询";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnViewPhoto
             // 
-            this.btnViewPhoto.Location = new System.Drawing.Point(108, 90);
+            this.btnViewPhoto.Location = new System.Drawing.Point(108, 75);
             this.btnViewPhoto.Name = "btnViewPhoto";
             this.btnViewPhoto.Size = new System.Drawing.Size(95, 23);
             this.btnViewPhoto.TabIndex = 3;
@@ -159,7 +160,7 @@
             // 
             // btnSingleScore
             // 
-            this.btnSingleScore.Location = new System.Drawing.Point(108, 61);
+            this.btnSingleScore.Location = new System.Drawing.Point(108, 46);
             this.btnSingleScore.Name = "btnSingleScore";
             this.btnSingleScore.Size = new System.Drawing.Size(95, 23);
             this.btnSingleScore.TabIndex = 2;
@@ -185,6 +186,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.queryType);
             this.tabPage2.Controls.Add(this.lblClasse);
             this.tabPage2.Controls.Add(this.btnStart);
             this.tabPage2.Controls.Add(this.progressBar1);
@@ -197,10 +199,22 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(209, 116);
+            this.tabPage2.Size = new System.Drawing.Size(209, 143);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "班级查询";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // queryType
+            // 
+            this.queryType.FormattingEnabled = true;
+            this.queryType.Items.AddRange(new object[] {
+            "查询全班成绩",
+            "查询全班挂科情况"});
+            this.queryType.Location = new System.Drawing.Point(8, 88);
+            this.queryType.Name = "queryType";
+            this.queryType.Size = new System.Drawing.Size(124, 20);
+            this.queryType.TabIndex = 8;
+            this.queryType.SelectedValueChanged += new System.EventHandler(this.queryType_SelectedValueChanged);
             // 
             // tabPage3
             // 
@@ -208,14 +222,14 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(209, 116);
+            this.tabPage3.Size = new System.Drawing.Size(209, 143);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "按姓名查询";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnGetPageByName
             // 
-            this.btnGetPageByName.Location = new System.Drawing.Point(50, 48);
+            this.btnGetPageByName.Location = new System.Drawing.Point(49, 57);
             this.btnGetPageByName.Name = "btnGetPageByName";
             this.btnGetPageByName.Size = new System.Drawing.Size(109, 23);
             this.btnGetPageByName.TabIndex = 0;
@@ -225,7 +239,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(150, 158);
+            this.btnExit.Location = new System.Drawing.Point(154, 185);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 9;
@@ -236,7 +250,7 @@
             // llblSrc
             // 
             this.llblSrc.AutoSize = true;
-            this.llblSrc.Location = new System.Drawing.Point(10, 163);
+            this.llblSrc.Location = new System.Drawing.Point(10, 190);
             this.llblSrc.Name = "llblSrc";
             this.llblSrc.Size = new System.Drawing.Size(125, 12);
             this.llblSrc.TabIndex = 10;
@@ -248,14 +262,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 186);
+            this.ClientSize = new System.Drawing.Size(239, 216);
             this.ControlBox = false;
             this.Controls.Add(this.llblSrc);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.MaximumSize = new System.Drawing.Size(255, 225);
-            this.MinimumSize = new System.Drawing.Size(255, 225);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CCZU Dark Tech";
@@ -291,6 +303,7 @@
         private System.Windows.Forms.TextBox tbxStudentID;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnGetPageByName;
+        private System.Windows.Forms.ComboBox queryType;
     }
 }
 
